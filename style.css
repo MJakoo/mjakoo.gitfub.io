@@ -1,0 +1,18 @@
+h1.main {
+    font-family: Lucida Console;
+    font-size: 50px;
+}
+
+.inf {
+    font-family: Courier New;
+    
+}
+
+img{
+    width: 100px;
+    height: 100px;
+}
+
+a.link{
+    color: blue;
+}
