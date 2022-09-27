@@ -1,7 +1,17 @@
-h1.main {
-    font-family: Lucida Console;
+body {
+    background-color: #edffda;
+}
+
+.main {
+    font-family: 'Roboto:wght300', sans-serif;
     font-size: 50px;
 }
+
+.mainl {
+    font-family: 'Roboto:wght300', sans-serif;
+    font-size: 35px;
+}
+
 
 .inf {
     font-family: Courier New;
@@ -13,6 +23,12 @@ img{
     height: 100px;
 }
 
-a.link{
+img:hover{
+    width: 110px;
+    height: 110px;
+}
+
+a.link:hover{
     color: blue;
+    font-size: 18px;
 }
