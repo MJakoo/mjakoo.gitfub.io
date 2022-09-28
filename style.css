@@ -2,9 +2,13 @@ body {
     background-color: #edffda;
 }
 
+table {
+    width: 25%;
+  }
+
 .main {
     font-family: 'Roboto:wght300', sans-serif;
-    font-size: 50px;
+    font-size: 75px;
 }
 
 .mainl {
@@ -18,12 +22,18 @@ body {
     
 }
 
-img{
+img.Main{
+    width: 114px;
+    height: 106px;
+    border-radius: 50%;
+}
+
+img.button{
     width: 100px;
     height: 100px;
 }
 
-img:hover{
+img.button:hover{
     width: 110px;
     height: 110px;
 }
@@ -32,3 +42,36 @@ a.link:hover{
     color: blue;
     font-size: 18px;
 }
+
+input{
+    border-radius: 5px;
+    height: 20px;
+    width: 175px;
+}
+
+.checkbox{
+    height: 15px;
+    width: 15px;
+}
+
+.button {
+    background: #c1ffd4;
+    color: rgb(0, 0, 0);
+    border-style: outset;
+    border-color: #78ceff;
+    height: 30px;
+    width: 100px;
+    font: bold15px arial,sans-serif;
+    text-shadow: none;
+    }
+
+.button:hover {
+    background: #c1ffd4;
+    color: rgb(0, 0, 0);
+    border-style: outset;
+    border-color: #78ceff;
+    height: 35px;
+    width: 105px;
+    font: bold15px arial,sans-serif;
+    text-shadow: none;
+    }
