@@ -54,6 +54,11 @@ input{
     width: 15px;
 }
 
+.redbutton{
+    width: 100px;
+    height: 100px
+}
+
 .button {
     background: #c1ffd4;
     color: rgb(0, 0, 0);
