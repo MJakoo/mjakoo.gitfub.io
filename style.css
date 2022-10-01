@@ -1,9 +1,16 @@
 body {
-    background-color: #edffda;
+    background-color: #1a1a1a;
+    color: rgb(218, 218, 218);
+}
+
+dl{
+    font-family: 'Roboto:wght300', sans-serif;
+    font-size: 18px;
 }
 
 table {
-    width: 25%;
+    font-family: 'Roboto Condensed', sans-serif;
+    width: 45%;
   }
 
 .main {
@@ -16,6 +23,19 @@ table {
     font-size: 35px;
 }
 
+.tbl{
+    font-family: 'Roboto:wght500', sans-serif;
+    font-weight: bold;
+    font-size: 23px;
+}
+
+div{
+    font-family: 'Montserrat', sans-serif;
+}
+
+dl {
+    font-family: 'Montserrat', sans-serif;
+}
 
 .inf {
     font-family: Courier New;
@@ -28,7 +48,7 @@ img.Main{
     border-radius: 50%;
 }
 
-img.button{
+img.button{          
     width: 100px;
     height: 100px;
 }
@@ -38,8 +58,24 @@ img.button:hover{
     height: 110px;
 }
 
+a.mail{
+    color: aliceblue;
+}
+
+a.mail:hover{
+    color: aliceblue;
+    font-size: 16.5px;
+}
+
+a.link{
+    color: aliceblue;
+    font-family: 'Roboto Slab', serif;
+
+}
+
 a.link:hover{
-    color: blue;
+    color: rgb(199, 199, 199);
+    font-family: 'Roboto Slab', serif;
     font-size: 18px;
 }
 
@@ -59,24 +95,29 @@ input{
     height: 100px
 }
 
+.redbutton:hover{
+    width: 105px;
+    height: 105px
+}
+
 .button {
-    background: #c1ffd4;
+    background: #b4b4b4;
     color: rgb(0, 0, 0);
     border-style: outset;
-    border-color: #78ceff;
+    border-color: #5d676d;
     height: 30px;
     width: 100px;
-    font: bold15px arial,sans-serif;
+    font-family: 'Montserrat', sans-serif;
     text-shadow: none;
     }
 
 .button:hover {
-    background: #c1ffd4;
+    background: #c5c5c5;
     color: rgb(0, 0, 0);
     border-style: outset;
-    border-color: #78ceff;
+    border-color: #4d616d;
     height: 35px;
     width: 105px;
-    font: bold15px arial,sans-serif;
+    font-family: 'Montserrat', sans-serif;
     text-shadow: none;
     }
