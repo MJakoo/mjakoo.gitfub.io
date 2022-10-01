@@ -22,7 +22,9 @@ table {
     font-family: 'Roboto:wght300', sans-serif;
     font-size: 35px;
 }
-
+.test{
+    font-family: 'Roboto:wght300', sans-serif;
+}
 .tbl{
     font-family: 'Roboto:wght500', sans-serif;
     font-weight: bold;
