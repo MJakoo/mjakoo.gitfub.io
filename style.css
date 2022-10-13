@@ -7,6 +7,11 @@ body {
     color: rgb(218, 218, 218);
 }
 
+.dark{
+    background-color: rgb(218, 218, 218);
+    color: #1a1a1a;
+}
+
 dl{
     font-family: 'Roboto:wght300', sans-serif;
     font-size: 18px;
@@ -85,6 +90,18 @@ a.link:hover{
     font-size: 18px;
 }
 
+a.dlink{
+    color: aliceblue;
+    font-family: 'Roboto Slab', serif;
+
+}
+
+a.dlink:hover{
+    color: rgb(199, 199, 199);
+    font-family: 'Roboto Slab', serif;
+    font-size: 18px;
+}
+
 input{
     border-radius: 5px;
     height: 20px;
@@ -117,6 +134,17 @@ input{
     text-shadow: none;
     }
 
+.buttontemp{
+    background: #b4b4b4;
+    color: rgb(0, 0, 0);
+    border-style: outset;
+    border-color: #5d676d;
+    height: 30px;
+    width: 190px;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: none;
+}
+
 .button:hover {
     background: #c5c5c5;
     color: rgb(0, 0, 0);
@@ -124,6 +152,17 @@ input{
     border-color: #4d616d;
     height: 35px;
     width: 105px;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: none;
+    }
+    
+.buttontemp:hover {
+    background: #c5c5c5;
+    color: rgb(0, 0, 0);
+    border-style: outset;
+    border-color: #4d616d;
+    height: 35px;
+    width: 195px;
     font-family: 'Montserrat', sans-serif;
     text-shadow: none;
     }
