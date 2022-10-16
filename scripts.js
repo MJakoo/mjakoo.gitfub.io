@@ -6,7 +6,7 @@ function DarkMode() {
 }
 
 function Temperature(){
-    var test = prompt("Temperature")
+    var test = prompt("Temperature(Ex.: 54f) ")
     var forc = test.slice(-1)
     var temp = parseInt(test.slice(0,-1))
     
