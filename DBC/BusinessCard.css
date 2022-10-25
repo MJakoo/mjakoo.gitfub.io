@@ -21,10 +21,10 @@ body {
 }
 
 .card {
-    width: 90%;
-    margin: 35px auto;
+    margin: 45px auto;
     border: 1px solid #ababab;
-    border-radius: 10px;
+    width: 320px;
+    border-radius: 15px;
     background-color: #161619;
 }
 
