@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="/Tasks/tasks.css" />
+    <script src="/Tasks/tasks.js"></script>
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+    <title>Some Games and Stuff</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="head">Tasks:</h1>
+    </header>
+    <hr />
+    <div class="darkmode">
+      <h2 class="tasknames">Dark Mode:</h2>
+      <div class="toggle">
+        <input
+          onclick="DarkMode()"
+          type="checkbox"
+          class="checkbox"
+          id="checkbox"
+        />
+        <label for="checkbox" class="label">
+          <p class="sun">&#9788;</p>
+          <p class="moon">&#9789;</p>
+          <div class="ball"></div>
+        </label>
+      </div>
+    </div>
+    <div class="Temperature">
+      <h2 class="tasknames">Temperature Task:</h2>
+      <p></p>
+      <input
+        onclick="Temperature()"
+        class="buttontemp"
+        type="button"
+        value="Temperature JS"
+      />
+    </div>
+    <p></p>
+    <a class="link" href="/index.html">Go Back</a>
+
+    <div class="RPC">
+      <h2 class="tasknames">Rock Paper Scissors:</h2>
+
+      <p class="instructions">The Rules are Simple!</p>
+      <p class="instructions">You pick one of 3 options:</p>
+      <p class="instructions">Rock is 0, Paper is 1, Scissors are 2</p>
+      <p class="instructions">
+        Rock beats Scissors, Paper beats Rock, Scissors beat Paper!
+      </p>
+      <p class="instructions">Pick Your Option</p>
+      <a class="rpsIcons" onclick="pickRock()" href="#"
+        ><img class="rpsIcons" src="/Tasks/assets/fist.png" alt=""
+      /></a>
+      <a class="rpsIcons" onclick="pickPaper()" href="#"
+        ><img class="rpsIcons" src="/Tasks/assets/open-hands.png" alt=""
+      /></a>
+      <a class="rpsIcons" onclick="pickScissors()" href="#"
+        ><img class="rpsIcons" src="/Tasks/assets/two.png" alt=""
+      /></a>
+      <!-- <input onclick="pickScissors()" type="button" value="Scissors" /> -->
+      <p></p>
+      <button onclick="startGameV2()">Play</button>
+      <p></p>
+      <button onclick="startGame()">Old Style</button>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,119 @@
+a{
+    text-decoration: none;
+}
+
+body {
+    background-color: #1a1a1a;
+    color: rgb(218, 218, 218);
+}
+
+a.link{
+    color: aliceblue;
+    font-family: 'Roboto Slab', serif;
+    margin-right: 15px;
+}
+
+a.link:hover{
+    color: rgb(199, 199, 199);
+    font-family: 'Roboto Slab', serif;
+    font-size: 17px;
+}
+
+/* Everything about Dark Mode Start */
+
+.dark{
+    background-color: rgb(218, 218, 218);
+    color: #1a1a1a;
+}
+
+a.dlink{
+    color: rgb(0, 0, 0);
+    font-family: 'Roboto Slab', serif;
+
+}
+
+a.dlink:hover{
+    color: rgb(39, 39, 39);
+    font-family: 'Roboto Slab', serif;
+    font-size: 18px;
+}
+
+/* Button Start*/
+.toggle{
+    margin-left: 30px;
+}
+
+.checkbox{
+    display: none
+}
+
+.label {
+    width: 40px;
+    height: 15px;
+    background-color:#111;
+    display: flex;
+    border-radius:50px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    position: relative;
+    transform: scale(1.5);
+    margin-right: 20px;
+  }
+  
+  .ball {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    border-radius: 50%;
+    transition: transform 0.2s linear;
+  }
+  
+  .checkbox:checked + .label .ball{
+    transform: translateX(24px);
+  }
+
+  .moon{
+    color:pink;
+  }
+  .sun{
+    color: yellow;
+  }
+
+/* Button End */
+
+/* Everything about Dark Mode Stop  */
+
+h1.head{
+    font-family: 'Roboto:wght300', sans-serif;
+    font-size: 50px;
+    margin-left: 25px;
+}
+
+.tasknames{
+    font-family: 'Roboto:wght400', sans-serif;
+}
+
+.instructions{
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
+}
+
+/* Rock Paper Scissors Start */
+
+img.rpsIcons{
+    width: 50px;
+    height: 50px;
+}
+
+a.rpsIcons{
+    margin-left: 15px;
+    font-size: 70px;
+    background-color: aliceblue;
+    border-radius: 25%;
+}
+
+/* Rock Paper Scissors End */

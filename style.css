@@ -7,6 +7,56 @@ body {
     color: rgb(218, 218, 218);
 }
 
+/* Dark Mode Toggle Start */
+.toggle{
+    display: flex;
+    justify-content:end;
+    align-items:flex-end;
+    flex-direction: row;
+}
+
+.checkbox{
+    display: none
+}
+
+.label {
+    width: 40px;
+    height: 15px;
+    background-color:#111;
+    display: flex;
+    border-radius:50px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    position: relative;
+    transform: scale(1.5);
+    margin-right: 20px;
+  }
+  
+  .ball {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    border-radius: 50%;
+    transition: transform 0.2s linear;
+  }
+  
+  /*  target the elemenent after the label*/
+  .checkbox:checked + .label .ball{
+    transform: translateX(24px);
+  }
+
+  .moon{
+    color:pink;
+  }
+  .sun{
+    color: yellow;
+  }
+/* End */
+
 .dark{
     background-color: rgb(218, 218, 218);
     color: #1a1a1a;
@@ -24,15 +74,16 @@ table {
 
 .header{
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: row;
-    margin-left: 30px;
 }
 
 .main {
     font-family: 'Roboto:wght300', sans-serif;
     font-size: 75px;
     text-align: center;
-    margin-left: 485px;
+    margin-left: 35px;
 }
 .oldmain{
     font-family: 'Roboto:wght300', sans-serif;
@@ -72,8 +123,6 @@ img.Main{
     width: 114px;
     height: 106px;
     border-radius: 50%;
-    margin-top: 35px;
-    margin-right: 35px;
 }
 
 img.button{          
@@ -192,5 +241,8 @@ input{
 }
 
 .nav{
-    margin-left: 37%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
 }

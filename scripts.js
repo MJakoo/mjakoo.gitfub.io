@@ -1,8 +1,9 @@
 function DarkMode() {
     var element1 = document.body;
     element1.classList.toggle("dark");
-    const element2 = document.querySelector('.link');
-     element2.classList.toggle('dlink');
+    const element2 = document.querySelectorAll('.link');
+    for(let el of element2)
+        el.classList.toggle('dlink');
 }
 
 function Temperature(){
