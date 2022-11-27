@@ -90,15 +90,15 @@ function startGame() {
 var playerChoice = 0;
 
 function pickRock(){
-     var playerChoice = 0;
+     playerChoice = 0;
      alert("You picked Rock!")
 }
 function pickPaper(){
-    var playerChoice = 1;
+    playerChoice = 1;
     alert("You picked Paper!")
 }
 function pickScissors(){
-    var playerChoice = 2;
+    playerChoice = 2;
     alert("You picked Scissors!")
 }
 
@@ -155,3 +155,7 @@ function startGameV2() {
     
     
   }
+
+
+
+  
