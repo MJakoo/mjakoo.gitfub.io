@@ -35,13 +35,28 @@ button{
     height: 39px;
     width: 39px;
     border: none;
-
+    background: #616161;
+    color: #c2c2c2;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
 }
-input{
+
+button:hover{
+    background: #ffffff;
+    color: #858383;
+}
+
+input.search-bar{
     border: none;
+    outline: none;
     padding: 10px;
     border-radius: 20px;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
-        font-size: 120%;
+    font-size: 120%;
+    background-color: #797979;
+    width: 50%;
+}
+input.search-bar::placeholder{
+    color: #414141;
 }
