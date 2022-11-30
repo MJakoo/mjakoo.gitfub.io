@@ -240,7 +240,7 @@ input{
     width: 50%;
 }
 
-.nav{
+nav{
     display: flex;
     justify-content: center;
     align-items: center;
