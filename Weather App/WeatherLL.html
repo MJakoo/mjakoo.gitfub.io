@@ -25,17 +25,40 @@
       <h1 class="main">Weather App</h1>
     </header>
     <hr />
+
     <main>
-      <div class="cardmain">
-        <h1>Choose the Option:</h1>
-        <div class="links">
-          <a href="/Weather App/WeatherCity.html"
-            >Search by the Name of the City</a
-          >
-          <br />
-          <a href="/Weather App/WeatherCord.html">Search by the Geolocation</a>
-          <br />
-          <a href="/Weather App/WeatherLL.html">Search by the Cordinates</a>
+      <div class="card">
+        <div class="search">
+          <div class="search-bar"></div>
+          <div class="LL">
+            <input
+              type="text"
+              class="search-bar-lon"
+              placeholder="Longtitude"
+            />
+            <input type="text" class="search-bar-lat" placeholder="Latitude" />
+          </div>
+          <button>
+            <span class="material-symbols-outlined"> search </span>
+          </button>
+        </div>
+        <div class="weather">
+          <h2 class="city"></h2>
+          <div class="temp"><h1 class="temp"></h1></div>
+          <div class="int">
+            <img src="" alt="" class="icon" />
+            <div class="mainD"></div>
+          </div>
+          <div class="info"></div>
+          <div class="inf">
+            <div class="feels_like"></div>
+            <div class="temp_min"></div>
+            <div class="temp_max"></div>
+            <div class="description"></div>
+            <div class="humidity"></div>
+            <div class="pressure"></div>
+            <div class="wind"></div>
+          </div>
         </div>
       </div>
     </main>

@@ -26,11 +26,28 @@ main{
     border-radius: 30px;
 }
 
+.cardmain{
+    margin: 20px;
+    margin-bottom: 30px;
+    height: 450px;
+    width: 100%;
+    max-width: 500px;
+    background-color: #2b2b2b ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+    
+    padding: 40px;
+    border-radius: 30px;
+}
+
 .search{
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 button{
     margin: 10px;
     border-radius: 50%;
@@ -48,6 +65,10 @@ button:hover{
     color: #858383;
 }
 
+button.Cord{
+    width: 200px;
+}
+
 input.search-bar{
     border: none;
     outline: none;
@@ -63,8 +84,47 @@ input.search-bar::placeholder{
     color: #414141;
 }
 
+input.search-bar-lon{
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 120%;
+    background-color: #797979;
+    width: 30%;
+    margin-bottom: 10px;
+    margin-left: 45px;
+}
+input.search-bar-lon::placeholder{
+    color: #414141;
+}
+
+input.search-bar-lat{
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 120%;
+    background-color: #797979;
+    width: 30%;
+    margin-bottom: 10px;
+    margin-left: 45px;    
+}
+input.search-bar-lat::placeholder{
+    color: #414141;
+}
+
 h2.city{
     font-size: 30px;
+}
+
+.cardmain .links a{
+    color:  white;
+    margin-bottom: 20px;
 }
 
 .int{

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
-    <script src="/scripts.js" defer></script>
+    <script src="/Weather App/WeatherCord.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -25,17 +25,29 @@
       <h1 class="main">Weather App</h1>
     </header>
     <hr />
+
     <main>
-      <div class="cardmain">
-        <h1>Choose the Option:</h1>
-        <div class="links">
-          <a href="/Weather App/WeatherCity.html"
-            >Search by the Name of the City</a
-          >
-          <br />
-          <a href="/Weather App/WeatherCord.html">Search by the Geolocation</a>
-          <br />
-          <a href="/Weather App/WeatherLL.html">Search by the Cordinates</a>
+      <div class="card">
+        <div class="search">
+          <button class="Cord">Press to find the Weather</button>
+        </div>
+        <div class="weather">
+          <h2 class="city"></h2>
+          <div class="temp"><h1 class="temp"></h1></div>
+          <div class="int">
+            <img src="" alt="" class="icon" />
+            <div class="mainD"></div>
+          </div>
+          <div class="info"></div>
+          <div class="inf">
+            <div class="feels_like"></div>
+            <div class="temp_min"></div>
+            <div class="temp_max"></div>
+            <div class="description"></div>
+            <div class="humidity"></div>
+            <div class="pressure"></div>
+            <div class="wind"></div>
+          </div>
         </div>
       </div>
     </main>

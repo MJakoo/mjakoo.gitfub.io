@@ -1,32 +1,3 @@
-function DarkMode() {
-    var element1 = document.body;
-    element1.classList.toggle("dark");
-    const element2 = document.querySelectorAll('.link');
-    for(let el of element2)
-        el.classList.toggle('dlink');
-}
-
-function Temperature(){
-    var test = prompt("Temperature(Ex.: 54f) ")
-    var forc = test.slice(-1)
-    var temp = parseInt(test.slice(0,-1))
-    
-    if(forc == "f" || forc == "F"){
-        temp = ((temp-32)*5)/9
-        alert("The Temperature is " + temp + " Celsium")
-    }
-    else if(forc == "c" || forc == "C"){
-        alert("The Temperature is " + temp + " Celsium")
-    }
-    else{
-        alert("Something went Wrong!")
-    }
-    
-}
-
-
-//Weather and Geolocation:
-
 let weather = {
     "apiKey": "60c00ba990d8bb9c32f39374f3636d1f",  //API key that was given from OpenWeather API
 }
@@ -68,47 +39,17 @@ let weather = {
         document.querySelector(".feels_like").innerText = "Feels Like: " + feels_like + "°C"; 
         document.querySelector(".info").innerText = "More Information:"
     };
+    function search(){
+        this.fetchWeather(document.querySelector(".search-bar").value)
+        .catch(err => search2())
+    };
 
-function fetchWeatherll(lon, lat){
-    fetch("https://api.openweathermap.org/data/2.5/weather?lat=" + lon + "&lon=" + lat + "&appid="+ weather.apiKey +"&units=metric")
-    .then((responce) => responce.json())
-    .then((data) => this.displayWeather(data))
-    .catch(err => alert("Cordinates are non existant!"))
-};
-
-function search2(){
-    this.fetchWeatherll(document.querySelector(".search-bar-lon").value, document.querySelector(".search-bar-lat").value );
-};
-
-document.querySelector(".search-bar-lon").addEventListener("keyup", function(event){
-    if(event.key == "Enter"){
-        search2();
-    }
-});
-document.querySelector(".search-bar-lat").addEventListener("keyup", function(event){
-    if(event.key == "Enter"){
-        search2();
-    }
+document.querySelector(".search button").addEventListener("click", function(){
+    search();
 });
 
-//Geolocation Finder
-
-var x = document.getElementById("demo");
-function getLocation() {
-  if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(showPosition);
-  } else {
-    x.innerHTML = "Geolocation is not supported by this browser.";
-  }
-}
-
-function showPosition(position) {
-  x.innerHTML = "Latitude: " + position.coords.latitude +
-  "<br>Longitude: " + position.coords.longitude;
-}
-
-function searchCord(){
-    getLocation()
-    this.fetchWeatherll(document.querySelector(position.coords.latitude), 
-    document.querySelector(position.coords.longitude));
-}
+document.querySelector(".search-bar").addEventListener("keyup", function(event){
+    if(event.key == "Enter"){
+        search();
+    }
+});
