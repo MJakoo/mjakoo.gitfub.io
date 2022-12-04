@@ -8,24 +8,16 @@ let weather = {
         .catch(err => alert("Wrong City Name!"))
     };
 
-    // function fetchCountry(country){
-    //     fetch("https://restcountries.com/v2/alpha/" + country)
-    //     .then((responce) => responce.json())
-    //     .then((data2) => this.fullCountry(data2))
-    // }
-
-    // function fullCountry(data2){
-    //     const { name } = data2;
-    //     var countryname = name;
-    // }
-
-    function displayWeather(data){
+    async function displayWeather(data){
         const { name } = data;
         const { country } = data.sys;
         const { icon, main, description } = data.weather[0];
         const { temp, humidity, feels_like, temp_min, temp_max, pressure } = data.main;
         const { speed } = data.wind;
-        document.querySelector(".city").innerText = "Weather in " + name + "," + country;
+
+        var fullCountry =  await requestFullname(country);
+
+        document.querySelector(".city").innerText = "Weather in " + name + ", " + fullCountry;
         
         document.querySelector(".icon").src = "https://openweathermap.org/img/wn/" + icon + "@2x.png";
         document.querySelector(".mainD").innerText = main;
@@ -39,6 +31,19 @@ let weather = {
         document.querySelector(".feels_like").innerText = "Feels Like: " + feels_like + "°C"; 
         document.querySelector(".info").innerText = "More Information:"
     };
+
+    async function requestFullname(country) {
+
+        let nameApi = `https://restcountries.com/v2/alpha/` + country;
+        const cityName = fetch(nameApi)
+        .then(response =>response.json())
+        .then(result => { return result.name })
+      
+        
+        return cityName
+      
+      }
+
     function search(){
         this.fetchWeather(document.querySelector(".search-bar").value)
         .catch(err => search2())
